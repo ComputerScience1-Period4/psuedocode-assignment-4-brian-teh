@@ -17,6 +17,7 @@ matching 4 cards of the same suit gains one point to their owner //ex. has 4 ace
 player with highest ammount of points win
 player 1 goes first
 
+loop [
 while player1 && player2 have cards in their hand:
   player 1 asks for a card type that they own
   if player 2 has card:
@@ -36,6 +37,8 @@ while player1 && player2 have cards in their hand:
   else if deck contains cards:
     player 2 draws one card from the remaining deck of cards
   after action is complete pass turn to player 1
-  if player 1 runs out of cards, player 1 draws 3 cards
-  if player 2 runs out of cards, player 2 draws 3 cards
-  when no more cards are left in the deck, do nothing
+
+if player 1 runs out of cards, player 1 draws 3 cards
+if player 2 runs out of cards, player 2 draws 3 cards
+]
+when no more cards are left in the deck, print "no more cards" do nothing
